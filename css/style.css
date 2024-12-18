@@ -44,6 +44,15 @@ body {
 .container{
     display: none;
 }
+#myWidget{
+    width: 300px;
+    margin: 0 auto;
+    height: 200px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 section{
     padding: 2rem 7%;
 }
