@@ -29,3 +29,19 @@ window.onscroll = () => {
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }
+
+
+
+
+window.onloadTurnstileCallback = function () {
+    turnstile.render("#myWidget", {
+      sitekey: "0x4AAAAAAA3DsQ8MAh9fXzQD",
+      callback: function (token) {
+        console.log(`Challenge Success ${token}`);
+        setTimeout(() =>{
+            document.querySelector(".container").style.display = "block";
+            document.getElementById("#myWidget").style.display = "none";
+        }, 2000);
+      },
+    });
+  };

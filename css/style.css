@@ -41,6 +41,9 @@ body {
     background: var(--bg);
 }
 
+.container{
+    display: none;
+}
 section{
     padding: 2rem 7%;
 }
