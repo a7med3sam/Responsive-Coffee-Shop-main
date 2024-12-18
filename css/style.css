@@ -42,7 +42,7 @@ body {
 }
 
 .container{
-    display: none;
+    display: block;
 }
 #myWidget{
     width: 300px;

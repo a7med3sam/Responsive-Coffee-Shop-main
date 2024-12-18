@@ -40,7 +40,7 @@ window.onloadTurnstileCallback = function () {
         console.log(`Challenge Success ${token}`);
         setTimeout(() =>{
             document.querySelector(".container").style.display = "block";
-            document.getElementById("#myWidget").style.display = "none";
+            document.getElementById("myWidget").style.display = "none";
             // Optionally, hide the "Please verify" message too
             document.getElementById("verification-message").style.display = "none";
         }, 2000);
